@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
 
     private String nome;
@@ -9,6 +9,11 @@ public class Titulo {
     private double somaDaAvaliacao;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
 
     public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
@@ -30,7 +35,7 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    public void exibeFichaTecnica () {
+    public void exibeFichaTecnica() {
         System.out.println("Nome do br.com.alura.screenmatch.modelos.Filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
@@ -41,12 +46,27 @@ public class Titulo {
     }
 
     public double pegaMedia() {
-        return somaDaAvaliacao/totalDeAvaliacoes;
+        return somaDaAvaliacao / totalDeAvaliacoes;
     }
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }
+
+
 
 
