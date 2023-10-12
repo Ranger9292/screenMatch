@@ -1,0 +1,26 @@
+[
+  {
+    "Nome": "Toy Story",
+    "AnoDeLancamento": 1995,
+    "IncluidoNoPlano": false,
+    "SomaDaAvaliacao": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 81
+  },
+  {
+    "Nome": "Shrek",
+    "AnoDeLancamento": 2001,
+    "IncluidoNoPlano": false,
+    "SomaDaAvaliacao": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 90
+  },
+  {
+    "Nome": "John Wick",
+    "AnoDeLancamento": 2014,
+    "IncluidoNoPlano": false,
+    "SomaDaAvaliacao": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 10
+  }
+]
